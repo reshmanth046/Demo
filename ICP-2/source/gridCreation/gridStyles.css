@@ -1,0 +1,52 @@
+/* arranging grids into center and displaying it as flex direction */
+.style-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* giving height and width for the each grid in page */
+.style-items {
+    height: 79px;
+    width: 79px;
+    display: block;
+    margin: 8px 7px;
+}
+
+/* adding colors for each grid in the page through .css file*/
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: lightcoral;
+}
+
+.third {
+    background-color: lightgreen;
+}
+
+.fourth {
+    background-color: lightsalmon;
+}
+
+.fifth {
+    background-color: red;
+}
+
+.sixth {
+    background-color: black;
+}
+
+.seventh {
+    background-color: yellow;
+}
+
+.eigth {
+    background-color: blue;
+}
+
+.ninth {
+    background-color: red;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rockStyles.css"> <!--Linking style sheet here-->
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Rock-Paper-Scissors</h1>
+        <button id="restart" class="restart-btn">Restart Game</button>
+        <div id="score" class="score">
+            <p>Player: 0</p>
+            <p>Computer: 0</p>
+        </div>
+    </header>
+    <h2>Click on the Player Choice</h2>
+    <div class="choices">
+        <img id="rock" class="choice" src="images/rock.jpg" alt="rock"/>
+        <img id="paper" class="choice" src="images/paper.jpg" alt="paper"/>
+        <img id="scissors" class="choice" src="images/scissors.jpg" alt="scissors"/>
+    </div>
+</div>
+<div id="result">
+    <p id="final-result"></p>
+    <p id="player-choice"></p>
+    <p id="computer-selection"></p>
+</div>
+<script src="main.js"></script> <!--Linking javascript file at end of html file when it is parsed it parses at end-->
+</body>
+</html>

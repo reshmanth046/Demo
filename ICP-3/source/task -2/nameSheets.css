@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*Using font suggested as lato*/
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+    margin-top: 10px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+/*giving css to button on the image*/
+.wrapper .detail-btn {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #47ffff;
+    color: black;
+}
+
+a.detail-btn {
+    text-decoration: none;
+}
+
+.detail-btn:focus {
+    outline: none;
+}
+/*arranging project images width, height*/
+.col .image {
+    width: 100%;
+    height: 200px;
+}
+
+/*Using color hexadecimal codes suggested for p and h3 tags*/
+.col p {
+    text-align: center;
+    color: #747704;
+}
+.col h3 {
+    color: #bcbbbb;
+}
+
+.image-heading {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile {
+    height: 120px;
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.profile-pic {
+    height: 100px;
+}
+/*giving color codes suggested for p and h3 tags*/
+.text-right h3 {
+    color: #bcbbbb;
+}
+.text-right p {
+    color: #747704;
+}
+.feature {
+    color: #bcbbbb;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}

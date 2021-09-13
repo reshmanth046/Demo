@@ -1,0 +1,97 @@
+/* styles for the whole document */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* initial restart button will not be displayed once game started then it displays */
+.restart-btn {
+    display: none;
+    background: #f4f4f4;
+    color: #333;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+/* colours to display once we hover on the restart button*/
+.restart-btn:hover {
+    background: #003699;
+    color: red;
+}
+/*main header styling*/
+.header {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.header h1 {
+    margin-bottom: 1rem;
+}
+/*scoreboard alignment and displaying it as grid of 2 with text color white*/
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+    color: #fff;
+}
+/*coloring each grid or child in scoreboard to different colors*/
+.score p:first-child {
+    background: red;
+}
+
+.score p:last-child {
+    background: blue;
+}
+/*choices placings on screen as grid display and  */
+.choices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.choice {
+    cursor: pointer;
+    width: 200px;
+}
+
+/*changing text color of final result if it is win then show green else show red*/
+.text-win {
+    color: #28a745;
+}
+
+.text-lose {
+    color: #dc3545;
+}
+
+#result {
+    border-radius: 25px;
+    border: 1px solid #73ad21;
+    padding: 10px;
+    width: 250px;
+    height: 175px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

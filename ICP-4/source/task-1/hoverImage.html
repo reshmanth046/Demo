@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Languages</title>
+    <!-- adding css file-->
+    <link href="hoverStyles.css" rel="stylesheet">
+    <!-- adding java script file-->
+    <script src="hoverScript.js"></script>
+</head>
+<body>
+
+<div id="image">
+    Hover over on the language you are interested.
+</div>
+<!-- adding image in the same column to hover the mouse pointer-->
+<img alt=" YOU SELECTED HTML LANGUAGE " class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="image/html.png">
+
+<img alt=" YOUR SELECTED CSS " class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="image/css.jpg">
+
+<img alt=" YOUR SELECTED JS " class="preview"
+     onmouseout="unDo()"
+     onmouseover="upDate(this)"
+     src="image/js.png">
+</body>
+</html>

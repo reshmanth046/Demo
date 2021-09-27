@@ -1,0 +1,79 @@
+/*Main container styling in todo*/
+.todo-container {
+  margin: 0 auto;
+  margin-top: -240px;
+  margin-left: 0px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 50%;
+  height: 350px;
+  padding: 20px;
+  background:#a20e0e;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-size: 40px;
+}
+
+.todo-input {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.todo-input input {
+  border: none;
+  padding: 5px;
+  width: 40%;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+/*error message styling*/
+.error {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+/*styling for showing entered todo list*/
+.todo-list {
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1.5px solid rgb(253, 3, 3);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  background: #ff0f0f;
+  color: white;
+  font-size: 20px;
+}
+
+.todo-item .actions {
+  display: flex;
+}
+
+.actions .edit,
+.actions .delete {
+  margin-right: 20px;
+}
+
+.todo-item.completed {
+  border-left: 10px solid green;
+}
+
+.actions .fa {
+  font-size: 25px;
+}

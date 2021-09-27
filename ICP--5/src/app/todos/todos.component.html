@@ -1,0 +1,34 @@
+<!--Main conatiner for entering todo's-->
+<div class="todo-container" >
+    <h2 class="header">Todo Application</h2>
+    <div class="todo-input">
+        <p class="error" *ngIf="error">Please enter a task</p>
+        <input type="text" placeholder="Add your todo task" [(ngModel)]="todoName" class="form-control" (keyup.enter)="addTodo()"/>
+    </div>
+<!--conatiner for displaying entered todos and calling functions from here to .ts file for performing actions-->
+    <div class="todo-list">
+      
+        <div class="todo-item" [class.completed]="todo.completed" *ngFor="let todo of todos; let i=index">
+            <div class="index">
+                {{i + 1}}
+            </div>
+            <div class="name">
+                {{todo.name}}
+            </div>
+            <div class="status">
+                {{todo.completed ? 'Completed' : 'Pending'}}
+            </div>
+            <div class="actions">
+                <div class="edit">
+                    <i *ngIf="!todo.completed" class="fa fa-pencil-square-o" aria-hidden="true" (click)="editTodo(i)"></i>
+                </div>
+                <div class="delete">
+                    <i class="fa fa-minus-circle" aria-hidden="true" (click)="deleteTodo(i)"></i>
+                </div>
+                <div class="complete">
+                    <i class="fa fa-check-square-o" aria-hidden="true" (click)="toggleTodo(i)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

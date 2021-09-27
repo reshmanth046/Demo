@@ -1,0 +1,35 @@
+<!--code for entering date in input field-->
+<div class="event-form">
+    <p *ngIf="showError" class="error">Please enter valid date</p>
+    <div class="form-item">
+        <label for="birthday">Date:</label>
+        <input type="date" id="Date" name="Date" style="background-color: slategray;"
+               (change)="setCounter()" [(ngModel)]="Date">
+    </div>
+</div>
+<!-- code for displaying event timer-->
+<div class="event-container">
+    <h2 class="header">Counter</h2>
+    <div class="timer">
+        <div class="days flex-item">
+            <h3 class="big-text">{{countDown[0]}}</h3>
+            <p class="small-text">Days</p>
+        </div>
+        <div class="hours flex-item">
+            <h3 class="big-text ">{{countDown[1]}}</h3>
+            <p class="small-text">Hours</p>
+        </div>
+        <div class="minutes flex-item">
+            <h3 class="big-text">{{countDown[2]}}</h3>
+            <p class="small-text">Minutes</p>
+        </div>
+        <div class="seconds flex-item">
+            <h3 class="big-text">{{countDown[3]}}</h3>
+            <p class="small-text">Seconds</p>
+        </div>
+    </div>
+    <!--code for displaying current date-->
+    <div class="today">
+        {{todayDate | date}}
+    </div>
+</div>

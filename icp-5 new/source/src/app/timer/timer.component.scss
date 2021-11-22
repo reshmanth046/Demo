@@ -1,0 +1,50 @@
+// Heading style
+.heading_style {
+  // Background is dark so make it light and center
+  color: white;
+  text-align: center;
+}
+
+// Countdown clock numbers
+.timer_numbers {
+  color: white;
+  text-align: center;
+  // Brings the numbers and time units closer together
+  font-size: 10vw;
+  line-height: 9vw;
+  margin-bottom: 0px;
+}
+
+// Time units
+// Such as DAYS, HOURS, MINUTES, SECONDS
+.timer_units {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  // Allows text to scale with viewport but not get too small
+  font-size: max(2vw, 12px);
+  margin-bottom: 0px;
+}
+
+// Target date at the bottom of the screen
+.timer_date {
+  color: white;
+  text-align: center;
+  // Allows text to scale with viewport but not get too small
+  font-size: max(2vw, 12px);
+  font-weight: bold;
+}
+
+// Divider between the clock and the target date
+.rule_gradient {
+  height: 7px;
+  background-image: linear-gradient(#8b1500, #ffbf1e);
+  background-repeat: no-repeat;
+}
+
+// Vertical dividers between each time unit
+.grad_border {
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-image: linear-gradient(to bottom, transparent, white, transparent) 1 100%;
+}

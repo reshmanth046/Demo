@@ -1,0 +1,31 @@
+<div class="todo">
+  <div class="container">
+    <h1>To Do List for 2021</h1>
+    <label for="submission">Add Item:</label>
+    <div class="input-group mb-4">
+
+      <!-- Textbox to enter tasks -->
+      <input type="text" class="form-control todo-list-head__text-input"  id="submission" [(ngModel)]="submission">
+      <!-- Embeds the button into the textbox -->
+      <div class="input-group-append">
+        <!-- Allows addition of the task to the items list -->
+        <button class="btn btn-secondary" type="button" (click)="submitNewItem()">Submit</button>
+      </div>
+    </div>
+
+    <!-- Creates a To Do list from the items list -->
+    <ul class="todo-list">
+      <div class="todo-list__items">
+        <!-- When the user clicks the item, mark as completed -->
+        <li *ngFor="let item of items; index as i;" (click)="completeItem(i)" [ngClass]="{'completed': item[1]}">
+          <!-- Shows the position in the list -->
+          <span>{{i + 1}}</span>
+          <!-- Shows the task -->
+          {{item[0]}}
+          <!-- Allows items to be deleted from a list -->
+          <div class="todo-list-item__trash" (click)="deleteItem(i)">Trash</div>
+        </li>
+      </div>
+    </ul>
+  </div>
+</div>

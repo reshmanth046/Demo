@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1 class="heading_style mb-3">Timer Clock</h1>
+
+      <!-- Creates a button group for user to enter a target date -->
+      <label for="target_date" style="color: white">select the timer :</label>
+      <div class="input-group mb-4">
+        <input type="datetime-local" class="form-control" id="target_date" [(ngModel)]="target">
+        <div class="input-group-append">
+          <button class="btn btn-secondary" type="button" (click)="setTime()">Submit</button>
+        </div>
+      </div>
+
+      <!-- Only show clock if the submit button is pressed -->
+      <div *ngIf="started" class="row mb-2">
+        <!-- Show Days -->
+        <div class="col">
+          <p class="timer_numbers">{{days}}</p>
+          <p class="timer_units">Days</p>
+        </div>
+        <!-- Show Hours -->
+        <div class="col grad_border">
+          <p class="timer_numbers">{{hours}}</p>
+          <p class="timer_units">Hours</p>
+        </div>
+        <!-- Show Minutes -->
+        <div class="col grad_border">
+          <p class="timer_numbers">{{minutes}}</p>
+          <p class="timer_units">Minutes</p>
+        </div>
+        <!-- Show Seconds -->
+        <div class="col grad_border">
+          <p class="timer_numbers">{{seconds}}</p>
+          <p class="timer_units">Seconds</p>
+        </div>
+      </div>
+
+      <!-- Creates a divider between the clock and target date -->
+      <hr *ngIf="started" class="rule_gradient">
+      <!-- Displays the formatted target date -->
+      <p *ngIf="started" class="timer_date">{{getTime()}}</p>
+    </div>
+  </div>
+</div>

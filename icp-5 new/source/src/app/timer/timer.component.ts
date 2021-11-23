@@ -43,12 +43,12 @@ export class TimerComponent implements OnInit {
       .subscribe(() => { this.countTime(); });
   }
 
-  // Update clock time
+  // Updating clock time
   countTime() {
     // Find the difference between future date and now
     let time = new Date(this.target).getTime() - new Date().getTime();
     if (time < 0) {
-      // Stop clock if the target is in the past
+      // Stoping clock if the target is in the past
       this.stopped = true;
     } else {
       this.days = Math.floor( time / 1000 / 60 / 60 / 24);

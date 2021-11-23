@@ -19,7 +19,7 @@ export class TodoComponent implements OnInit {
     // Remove background image added from the countdown clock
     // and set the background color to white
     document.body.style.backgroundImage = '';
-    document.body.style.backgroundColor = 'black';
+    document.body.style.backgroundColor = 'orange';
   }
 
   // Adds new item to items list

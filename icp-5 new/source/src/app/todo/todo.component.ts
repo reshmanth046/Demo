@@ -16,23 +16,18 @@ export class TodoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    // Remove background image added from the countdown clock
-    // and set the background color to white
     document.body.style.backgroundImage = '';
     document.body.style.backgroundColor = 'orange';
   }
 
-  // Adds new item to items list
   submitNewItem() {
     this.items.push([this.submission, false]);
   }
 
-  // Marks items as complete
   completeItem(index) {
     this.items[index][1] = true;
   }
 
-  // Deletes item from items list
   deleteItem(index) {
     this.items.splice(index, 1);
   }

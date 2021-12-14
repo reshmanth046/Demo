@@ -1,0 +1,13 @@
+com/umkc/icp4/MapsActivity.java
+ com.umkc.icp4.MapsActivity
+ com.umkc.icp4.MapsActivity$1
+com/umkc/icp4/StoreActivity.java
+ com.umkc.icp4.StoreActivity
+com/umkc/icp4/RecordActivity.java
+ com.umkc.icp4.RecordActivity
+com/umkc/icp4/BuildConfig.java
+ com.umkc.icp4.BuildConfig
+com/umkc/icp4/CameraActivity.java
+ com.umkc.icp4.CameraActivity
+com/umkc/icp4/MainActivity.java
+ com.umkc.icp4.MainActivity

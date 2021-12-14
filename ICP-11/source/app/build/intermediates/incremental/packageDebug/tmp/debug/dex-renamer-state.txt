@@ -1,0 +1,4 @@
+#Tue Dec 14 04:21:08 CST 2021
+base.0=C\:\\Drivers\\important\\WebProgramming-Spring2021\\Mobile_ICP4\\Source\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
